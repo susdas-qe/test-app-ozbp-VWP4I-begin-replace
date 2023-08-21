@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-hello-world-gsky
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/susdas_quay_org/build-e2e-qzfh-tenant/test-app-ozbp/devfile-sample-hello-world-gsky@sha256:876b86c27ac4132a1660f7325fd2350a6b9f792ce30a87cfa626753b7ca98a3d
+        name: my-nginx
+        resources: {}
+status: {}
